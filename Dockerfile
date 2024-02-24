@@ -27,8 +27,8 @@ WORKDIR /app
 
 # tensorflow-text incompatible with apple m1
 # Download and install the .whl file directly
-RUN curl -O https://github.com/sun1638650145/Libraries-and-Extensions-for-TensorFlow-for-Apple-Silicon/releases/download/v2.13/tensorflow_text-2.13.0-cp310-cp310-macosx_11_0_arm64.whl
-RUN pip install tensorflow_text-2.13.0-cp310-cp310-macosx_11_0_arm64.whl
+# RUN curl -O https://github.com/sun1638650145/Libraries-and-Extensions-for-TensorFlow-for-Apple-Silicon/releases/download/v2.13/tensorflow_text-2.13.0-cp310-cp310-macosx_11_0_arm64.whl
+# RUN pip install tensorflow_text-2.13.0-cp310-cp310-macosx_11_0_arm64.whl
 
 # Install Python dependencies from the requirements file
 RUN pip install --require-hashes -r requirements.txt
